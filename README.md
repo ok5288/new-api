@@ -404,9 +404,14 @@ docker run --name new-api -d --restart always \
 
 
 <summary><strong>Method 4: Vercel</strong></summary>
-One-click deployment of the project to Vercel, with pre-filled environment variables:
 
-[![Deploy with Vercel]([https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ok5288/new-api](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fok5288%2Fnew-api&project-name=new-api&teamSlug=ok5288s-projects))
+## Deploy to Vercel
+
+You can deploy this project to Vercel with a single click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fok5288%2Fnew-api.git&project-name=newapi-web&repository-name=newapi-web&build-command=rsbuild%20build&output-directory=dist&env=API_KEY,ANOTHER_ENV_VARIABLE&envDescription=Provide%20API_KEY%20and%20any%20other%20required%20environment%20variables)
+
+
 
 ### ⚠️ Multi-machine Deployment Considerations
 
