@@ -5,7 +5,7 @@
       "src": "web/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "web/dist"
+        "distDir": "web/dist" 
       }
     },
     {
@@ -20,14 +20,14 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "main.go"
+      "dest": "/api/main"
     },
     {
       "src": "/(.*)",
-      "dest": "web/dist/$1"
+      "dest": "/web/dist/$1"
     }
   ],
   "installCommand": "npm install --prefix web && go mod download",
-  "buildCommand": "npm run build --prefix web && go build -o main main.go",
+  "buildCommand": "npm run build --prefix web && go build -o api/main main.go",
   "devCommand": "npm run dev --prefix web & go run main.go"
 }
