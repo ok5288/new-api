@@ -409,8 +409,7 @@ docker run --name new-api -d --restart always \
 
 You can deploy this project to Vercel with a single click:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fok5288%2Fnew-api.git&project-name=newapi-web&repository-name=newapi-web&build-command=rsbuild%20build&output-directory=dist&env=API_KEY,ANOTHER_ENV_VARIABLE&envDescription=Provide%20API_KEY%20and%20any%20other%20required%20environment%20variables)
-
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fok5288%2Fnewapi.git&project-name=newapi-web&repository-name=newapi-web&build-command=npm%20run%20build%20--prefix%20web%20%26%26%20go%20build%20-o%20api/main%20main.go&output-directory=web/dist&env=API_KEY,ANOTHER_ENV_VARIABLE&envDescription=Provide%20API_KEY%20and%20other%20required%20environment%20variables)
 
 
 ### ⚠️ Multi-machine Deployment Considerations
