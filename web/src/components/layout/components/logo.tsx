@@ -55,7 +55,6 @@ export function Logo({
         className='max-h-full max-w-full opacity-70'
       />
       <span className={cn(!showName && 'sr-only')}>{name}</span>
-      {version && <span className='text-muted-foreground'>{version}</span>}
       {badge && <Badge variant='secondary'>{badge}</Badge>}
     </div>
   )
